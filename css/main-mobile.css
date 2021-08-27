@@ -1,0 +1,427 @@
+.wrapper {
+  width: 100%;
+}
+
+.header, .main, .footer {
+  width: 100%;
+}
+
+.main-container {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-container {
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  transition: .5s all;
+}
+
+.info-title {
+  width: fit-content;
+  color: #004390;
+  border-bottom: 5px solid #03BFCB;
+}
+
+.info-box {
+  border: 5px solid #004390;
+  border-radius: 10px;
+}
+
+.info-pack {
+  border-bottom: 0;
+}
+
+.info-pack:nth-child(2) {
+  border-right: 0px;
+}
+
+.partner-pack {
+  background-color: #D6D6D6;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.pack-title {
+  background-color: #004390;
+  color: #fff;
+  padding-top: 16px;
+  text-align: center;
+  padding-bottom: 16px;
+  margin: 0;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.sim-box {
+  text-align: center;
+  border-right: 5px solid #004390;
+  border-bottom: 5px solid #004390;
+}
+
+.sim-info {
+  font-weight: 900;
+}
+
+.sim-info span {
+  font-weight: 500;
+}
+
+.sim-img {
+  width: 90%;
+}
+
+.price-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 0;
+  border-bottom: 5px solid #004390;
+}
+
+.price-in-box {
+  text-align: center;
+}
+
+.price-in-box>p {
+  font-weight: 900;
+}
+
+.price {
+  color: #D2001A;
+}
+
+.product-content-box {
+  grid-column: 1/span 2;
+  padding: 16px 30px;
+  border-right: 0;
+}
+
+.product-title {
+  font-weight: 900;
+  color: #004390;
+}
+
+.product-content {
+  font-weight: 500;
+}
+
+.endow {
+  margin-top: 32px;
+}
+
+.circle {
+  color: #004390;
+}
+
+.shipment-details-container {
+  padding: 16px 26px 0;
+}
+
+.shipment-details-box {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 10px;
+}
+
+.details-container {
+  width: 100%;
+  margin-bottom: 16px;
+  margin-right: 10px;
+}
+
+.details-container>label {
+  font-weight: 900;
+  color: #004390;
+}
+
+.details-container>input {
+  border: 3px solid #03BFCB;
+  border-radius: 10px;
+  padding: 5px 0 5px 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+select {
+  width: 100%;
+  padding: 5px 0 5px 10px;
+  border: 3px solid #03BFCB;
+  border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+  color: gray;
+  font-weight: 900;
+  margin-top: 5px;
+  background-color: #fff;
+}
+
+.address-container>input {
+  width: 100%;
+  height: 100px;
+}
+
+::placeholder {
+  color: #9A9797;
+  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+}
+
+.total {}
+
+.total>p {
+  font-weight: 900;
+  margin: 5px;
+}
+
+.total>p:last-child {
+  font-weight: 500;
+  font-style: italic;
+}
+
+.total-content {}
+
+.number {
+  color: #D2001A;
+}
+
+.unit {
+  font-weight: 500;
+}
+
+.partner {
+  color: #004390;
+  margin: 0;
+  padding-top: 16px;
+  padding-left: 30px;
+  padding-bottom: 16px;
+  border-top: 5px solid #004390;
+}
+
+.info-register-box {
+  border: 5px solid #004390;
+  border-radius: 10px;
+}
+
+.info-pack-1 {
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.info-pack-2 {
+  border-bottom: 0;
+}
+
+.info-pack-3 {
+  border-bottom: 0;
+}
+
+/* Upload Pic Styles Begin */
+.photo-upload {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.avatar-upload {
+  position: relative;
+  max-width: 205px;
+  margin: 25px auto;
+}
+
+.avatar-upload~p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.avatar-edit {
+  position: absolute;
+  right: 12px;
+  z-index: 1;
+  top: 10px;
+}
+
+.input-file {
+  display: none;
+}
+
+.label-file {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 0;
+  border-radius: 100%;
+  background: #FFFFFF;
+  border: 1px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  font-weight: normal;
+  transition: all .2s ease-in-out;
+}
+
+.label-file:hover {
+  background: #f1f1f1;
+  border-color: #d6d6d6;
+}
+
+.label-file i {
+  color: #004390;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin: auto;
+}
+
+.avatar-preview {
+  width: 192px;
+  height: 152px;
+  position: relative;
+  border-radius: 10px;
+  border: 6px solid #F8F8F8;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-preview>div {
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#imagePreview1 {
+  width: 60%;
+  height: 60%;
+  margin: 30px auto;
+}
+
+#imagePreview2 {
+  width: 60%;
+  height: 60%;
+  margin: 30px auto;
+}
+
+#imagePreview3 {
+  width: 56%;
+  height: 80%;
+  margin: 14px auto;
+}
+
+/* Upload Pic Styles End */
+.info-pack-2 {}
+
+.customer-info-box {
+  /* height: 90%; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.customer-info-in-box div input {
+  padding: 7.5px 0 7.5px 10px;
+}
+
+.gender-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 3px solid #03BFCB;
+  width: 50%;
+  margin: 10px auto;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-right: 12px;
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}
+
+.pick-gender {
+  text-align: center;
+}
+
+.pick-gender input {}
+
+.pick-gender span {
+  font-weight: 900;
+  color: #004390;
+}
+
+.date {
+  padding: 5px 0 5px 10px !important;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  color: #9A9797;
+  background-color: #fff;
+}
+
+.info-pack-3 {}
+
+.customer-signature-box {
+  text-align: center;
+  padding-top: 16px;
+}
+
+.customer-signature-box textarea {
+  width: 80%;
+  margin: 0 auto;
+  border: 3px solid #03BFCB;
+  border-radius: 10px;
+}
+
+.customer-signature-box p {
+  font-weight: 500;
+  text-align: center;
+}
+
+.customer-commit {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.customer-check {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.customer-check>input {
+  cursor: pointer;
+  border: 3px solid #004390;
+}
+
+.customer-check>span {
+  font-weight: 500;
+}
+
+.btn {
+  width: 150px;
+  height: 39px;
+  background: linear-gradient(90deg, #004390 40.24%, #00003C 69.27%);
+  border-radius: 40px;
+  border: 0;
+  color: #fff;
+  margin-top: 30px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: .5s all;
+}
+
+.btn:hover {
+  -webkit-transition-delay: 5s;
+  -moz-transition-delay: 5s;
+  -ms-transition-delay: 5s;
+  -o-transition-delay: 5s;
+  transition-delay: 5s;
+  background: linear-gradient(90deg, #ECC55E 40.24%, #F5BA11 69.27%);
+}

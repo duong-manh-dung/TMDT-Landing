@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>mobifone | Xác nhận đơn hàng</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <link rel="shortcut icon" href="images/title-logo.ico" sizes="64x64">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" media="only screen and (max-width: 736px)" href="css/main-mobile.css">
+  <link rel="stylesheet" media="only screen and (min-width: 737px) and (max-width: 1023px)" href="css/main-tablet.css">
+  <link rel="stylesheet" media="only screen and (min-width: 1024px)" href="css/main-desktop.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-container">
+        <img class="logo mobi-logo" src="images/mobifone-logo.svg" alt="LOGO MOBIFONE">
+        <img class="logo partner-logo" src="images/be-logo.svg" alt="LOGO BE">
+      </div>
+    </header>
+    <main class="main">
+      <div class="main-container">
+        <div class="info-container customer-info">
+          <h1 class="info-title">THÔNG TIN ĐƠN HÀNG</h1>
+          <div class="info-box">
+            <div class="info-pack">
+              <h2 class="pack-title">Sản phẩm</h2>
+              <div class="product-container">
+                <div class="sim-box">
+                  <p class="sim-info">1mBE</p>
+                  <img class="sim-img" src="images/sim.svg" alt="Image SIM">
+                  <p class="sim-info">Số lượng: <span>1</span></p>
+                </div>
+                <div class="price-box">
+                  <div class="price-in-box">
+                    <p class="price-title">Giá</p>
+                    <p class="price">350.000VNĐ</p>
+                  </div>
+                </div>
+                <div class="product-content-box">
+                  <div class="product-content-in-box">
+                    <p class="product-title introduce-info">Thông tin giới thiệu</p>
+                    <p class="product-content">BE SIM là bộ hoà mạng kèm gói cước đặc thù được MobiFone và BE thiết kế dành riêng cho các Khách hàng của BE</p>
+                    <p class="product-title endow">Ưu đãi gói</p>
+                    <p class="product-content"><i class="circle fas fa-circle"></i>&nbsp;&nbsp;Có 6GB data tốc độ cao/ngày</p>
+                    <p class="product-content"><i class="circle fas fa-circle"></i>&nbsp;&nbsp;Miễn phí data truy cập ứng dụng BE (thông qua ứng dụng Mobifone Go)</p>
+                    <p class="product-content"><i class="circle fas fa-circle"></i>&nbsp;&nbsp;Giá gia hạn gói cước/ chu kỳ sau: 300,000 VNĐ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="info-pack">
+              <h2 class="pack-title">Thông tin giao hàng</h2>
+              <div class="shipment-details-container">
+                <div class="shipment-details-box">
+                  <div class="details-container name-container">
+                    <label for="name">Họ và tên người nhận</label> <br>
+                    <input class="name" type="text" name="name" placeholder="Nguyễn Dương Mạnh Dũng">
+                  </div>
+                  <div class="details-container phone-container">
+                    <label for="phone">Điện thoại liên hệ</label> <br>
+                    <input class="phone" type="phone" name="phone" placeholder="0848907219">
+                  </div>
+                  <div class="details-container address-container">
+                    <label for="address">Địa chỉ nhận hàng</label> <br>
+                    <input class="address" type="phone" name="address" placeholder="Ví dụ: 52 đường Trần Hưng Đạo">
+                  </div>
+                  <div class="details-container city-container province">
+                    <!-- <label for="address">Tỉnh/Thành phố</label> <br>
+                    <input class="address" type="phone" name="address" placeholder="Tỉnh/Thành phố"> -->
+                    <label for="address">Tỉnh/Thành phố</label> <br>
+                    <select name="calc_shipping_provinces" required="">
+                      <option value="">Chọn Tỉnh/Thành phố</option>
+                    </select>
+                  </div>
+                  <div class="details-container district-container district">
+                    <label for="address">Quận/Huyện</label> <br>
+                    <select name="calc_shipping_district" required="">
+                      <option value="">Chọn Quận/Huyện</option>
+                    </select>
+                  </div>
+                  <div class="total">
+                    <p class="total-cycle">Chu kỳ gói: <span class="number">30 </span><span class="unit">ngày</span></p>
+                    <p class="total-quantity">Số lượng: <span class="number">1 </span><span class="unit">bộ</span></p>
+                    <p class="total-content">Giá sản phẩm: <span class="number">350.000 </span><span class="unit">đ</span></p>
+                    <p class="total-content">Phí giao hàng: <span class="number">20.000 </span><span class="unit">đ</span></p>
+                    <p class="total-content">Tổng số tiền cần thanh toán: <span class="number">170.000 </span><span class="unit">đ</span></p>
+                    <p class="total-content">(Giá đã bao gồm VAT)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="partner-pack">
+              <h2 class="partner">Sản phẩm đăng kí qua BE</h2>
+            </div>
+          </div>
+        </div>
+        <div class="info-container subcriber-register-info">
+          <h1 class="info-title">THÔNG TIN ĐĂNG KÍ THUÊ BAO</h1>
+          <div class="info-register-box">
+            <div class="info-pack info-pack-1">
+              <h2 class="pack-title">CMND, Căn Cước Công Dân</h2>
+              <div class="citizen-identification-container">
+                <div class="photo-upload">
+                  <div class="photo-1">
+                    <div class="avatar-upload">
+                      <div class="avatar-edit">
+                        <input class="input-file" type='file' id="imageUpload1" accept=".png, .jpg, .jpeg" />
+                        <label class="label-file" for="imageUpload1"><i class="fas fa-arrow-alt-circle-up"></i></label>
+                      </div>
+                      <div class="avatar-preview">
+                        <div id="imagePreview1" style="background-image: url(images/cmnd-mt.png);">
+                        </div>
+                      </div>
+                    </div>
+                    <p>Ảnh CMND (Mặt trước)</p>
+                  </div>
+                  <div class="photo-2">
+                    <div class="avatar-upload">
+                      <div class="avatar-edit">
+                        <input class="input-file" type='file' id="imageUpload2" accept=".png, .jpg, .jpeg" />
+                        <label class="label-file" for="imageUpload2"><i class="fas fa-arrow-alt-circle-up"></i></label>
+                      </div>
+                      <div class="avatar-preview">
+                        <div id="imagePreview2" style="background-image: url(images/cmnd-ms.png);">
+                        </div>
+                      </div>
+                    </div>
+                    <p>Ảnh CMND (Mặt sau)</p>
+                  </div>
+                  <div class="photo-3">
+                    <div class="avatar-upload">
+                      <div class="avatar-edit">
+                        <input class="input-file" type='file' id="imageUpload3" accept=".png, .jpg, .jpeg" />
+                        <label class="label-file" for="imageUpload3"><i class="fas fa-arrow-alt-circle-up"></i></label>
+                      </div>
+                      <div class="avatar-preview">
+                        <div id="imagePreview3" style="background-image: url(images/user.png);">
+                        </div>
+                      </div>
+                    </div>
+                    <p>Ảnh chân dung (Bắt buộc)</p>
+                  </div>
+                  <button class="btn accuracy-btn" type="button" name="button">Xác thực ảnh</button>
+                </div>
+              </div>
+            </div>
+            <div class="info-pack info-pack-2">
+              <h2 class="pack-title">Thông tin khách hàng</h2>
+              <div class="customer-info-box">
+                <div class="customer-info-in-box">
+                  <div class="details-container name-container">
+                    <label for="name">Họ tên</label> <br>
+                    <input class="name" type="text" name="name" placeholder="Họ và tên">
+                  </div>
+                  <div class="gender-container">
+                    <div class="pick-gender">
+                      <input type="radio" name="gender" value="male"><span>Nam</span>
+                      <input type="radio" name="gender" value="female"><span>Nữ</span>
+                    </div>
+                  </div>
+                  <div class="details-container phone-container">
+                    <label for="phone">Số điện thoại liên lạc</label> <br>
+                    <input class="phone" type="phone" name="phone" placeholder="Số điện thoại">
+                  </div>
+                  <div class="details-container identity-card-container">
+                    <label for="identity-card">CMND/Căn cước công dân</label> <br>
+                    <input class="identity-card" type="text" name="identity-card" placeholder="CMND, Căn cước công dân">
+                  </div>
+                  <div class="details-container city-container">
+                    <label for="date">Ngày cấp</label> <br>
+                    <input class="date" type="date" name="date">
+                  </div>
+                  <div class="details-container district-container">
+                    <label for="address">Nơi cấp</label> <br>
+                    <input class="address" type="phone" name="address" placeholder="Nơi cấp">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="info-pack info-pack-3">
+              <h2 class="pack-title">Chữ ký khách hàng</h2>
+              <div class="customer-signature-box">
+                <textarea name="signature-place" rows="8" cols="80"></textarea>
+                <p>Chữ kí của khách hàng</p>
+              </div>
+            </div>
+
+          </div>
+          <div class="customer-commit">
+            <div class="customer-check">
+              <input type="checkbox" name="" value="">&nbsp;<span>Tôi cam kết những thông tin cung cấp trên là chính xác</span>
+            </div>
+            <button class="btn next-btn" type="button" name="button">Tiếp theo</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <p class="footer-content">Sản phẩm hợp tác giữa Mobifone và BE</p>
+        <p class="footer-content">Hỗ trợ đơn hàng : 0901831991</p>
+        <p class="footer-content">Liên hệ CSKH: 9090</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src='https://cdn.jsdelivr.net/gh/vietblogdao/js/districts.min.js'></script>
+  <script src="select.js" charset="utf-8"></script>
+</body>
+
+</html>
